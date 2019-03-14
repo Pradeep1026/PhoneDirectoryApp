@@ -1,26 +1,66 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
+import Header from './components/layout/Header';
+import Add from './components/pages/Add';
+import PhonebookDetails from './components/layout/PhonebookDetails';
+import uuid from 'uuid';
 import './App.css';
 
 class App extends Component {
+  state = {
+    details: [
+      {
+        id: uuid.v4(),
+        name:'',
+        phone:''
+      },
+    ]
+  }
+
+  //del details 
+  delDetails = (id) => {
+    this.setState({ details: [...this.state.details.filter(detail => detail.id !== id)]});
+  }
+  //Add details
+  addDetail = (name,phone) => {
+    const newDeatails = {
+      id: uuid.v4(),
+      name,
+      phone,
+    }
+    this.setState({ details: [...this.state.details, newDeatails]})
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div className="main-container">
+          <div className="component-container">
+            
+            <Route exact path = "/" render = {props => (
+              <React.Fragment>
+              <Header title={"PHONE DIRECTORY"}/>
+                <div className="component-body-container">
+                 <Link to = "/add" className="button"> ADD </Link>
+                 <table>
+                    <tbody>
+                      <th>NAME</th> <th>PHONE</th> <th></th>
+                      <PhonebookDetails details={this.state.details} delDetails={this.delDetails} />
+                    </tbody>
+                 </table>
+                 </div>
+              </React.Fragment>
+            )}/>
+            <Route path = "/add"  exact render={
+              () => {
+                return (<div>
+                  <Header title={"ADD SUBSCRIBER"}/>
+                  <Add addDetail={this.addDetail} />
+                 </div>
+              )}
+            }/>
+          </div>
+        </div>
+      </Router>
     );
   }
 }
