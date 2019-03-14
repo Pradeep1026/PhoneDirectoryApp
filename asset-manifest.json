@@ -1,13 +1,13 @@
 {
-  "main.css": "/PhoneDirectoryApp/static/css/main.ed5f6f1f.chunk.css",
-  "main.js": "/PhoneDirectoryApp/static/js/main.78986251.chunk.js",
-  "main.js.map": "/PhoneDirectoryApp/static/js/main.78986251.chunk.js.map",
-  "runtime~main.js": "/PhoneDirectoryApp/static/js/runtime~main.b85a2de9.js",
-  "runtime~main.js.map": "/PhoneDirectoryApp/static/js/runtime~main.b85a2de9.js.map",
-  "static/js/2.5f8e58a3.chunk.js": "/PhoneDirectoryApp/static/js/2.5f8e58a3.chunk.js",
-  "static/js/2.5f8e58a3.chunk.js.map": "/PhoneDirectoryApp/static/js/2.5f8e58a3.chunk.js.map",
-  "index.html": "/PhoneDirectoryApp/index.html",
-  "precache-manifest.5bffb761bd8585791772a0d5374cfab6.js": "/PhoneDirectoryApp/precache-manifest.5bffb761bd8585791772a0d5374cfab6.js",
-  "service-worker.js": "/PhoneDirectoryApp/service-worker.js",
-  "static/css/main.ed5f6f1f.chunk.css.map": "/PhoneDirectoryApp/static/css/main.ed5f6f1f.chunk.css.map"
+  "main.css": "/phoneapp/static/css/main.ed5f6f1f.chunk.css",
+  "main.js": "/phoneapp/static/js/main.af570637.chunk.js",
+  "main.js.map": "/phoneapp/static/js/main.af570637.chunk.js.map",
+  "runtime~main.js": "/phoneapp/static/js/runtime~main.2381df98.js",
+  "runtime~main.js.map": "/phoneapp/static/js/runtime~main.2381df98.js.map",
+  "static/js/2.5f8e58a3.chunk.js": "/phoneapp/static/js/2.5f8e58a3.chunk.js",
+  "static/js/2.5f8e58a3.chunk.js.map": "/phoneapp/static/js/2.5f8e58a3.chunk.js.map",
+  "index.html": "/phoneapp/index.html",
+  "precache-manifest.aa30a72f314e1a4e53fbcf5e83881f8e.js": "/phoneapp/precache-manifest.aa30a72f314e1a4e53fbcf5e83881f8e.js",
+  "service-worker.js": "/phoneapp/service-worker.js",
+  "static/css/main.ed5f6f1f.chunk.css.map": "/phoneapp/static/css/main.ed5f6f1f.chunk.css.map"
 }

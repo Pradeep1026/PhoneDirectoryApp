@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/PhoneDirectoryApp/precache-manifest.5bffb761bd8585791772a0d5374cfab6.js"
+  "/phoneapp/precache-manifest.aa30a72f314e1a4e53fbcf5e83881f8e.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/PhoneDirectoryApp/index.html", {
+workbox.routing.registerNavigationRoute("/phoneapp/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
